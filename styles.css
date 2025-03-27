@@ -1,0 +1,260 @@
+body:has(.main-div) {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px !important;
+    max-width:462px;
+    margin:auto;
+    border:1px solid;
+}
+
+.main-div{    
+    padding:40px 60px;
+}
+
+.all-subscriptions {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.top-heading {
+    display: flex;
+    justify-content: space-between;
+    gap:5px;
+}
+
+.horizon-line {
+   align-content: center;
+   width: 100%;
+}
+
+.top-heading-content {
+    min-width: 150px;
+}
+
+
+.top-heading-content p{
+    color:#FF6B82;
+    font-size:20px;
+    font-weight:600;
+    margin: 0px;
+}
+.horizon-line hr{
+    background-color:#C8C8C8 !important;
+}
+
+
+.block {
+    display:flex;
+    justify-content:space-between;
+}
+
+.common-block{
+    border:2px solid#C8C8C8;
+    padding:20px;
+}
+
+.common-block.active-block {
+    border-color:#FF6B82
+}
+.block .left-details {
+    display:flex;
+    gap:10px;
+}
+
+.block .amount-block {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.block input[type="radio"] {
+    margin:0px;
+    width:15px;
+}
+
+.block .block-unit-discount {
+    display: flex;
+    gap: 10px;
+}
+
+.block .block-unit-discount span {
+    font-weight:600;
+    font-size:14px;
+    align-self: center;
+}
+
+.block .block-unit-discount a{
+    font-weight:400;
+    font-size:12px;
+    padding:2px;
+    width:55px;
+    background-color:#FF6B82;
+    color:white;
+    border-radius:2px;
+}
+
+.block .block-status {
+    font-size:14px;
+    text-align:left;
+}
+
+.block .block-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-self: center;
+}
+
+.block span.reduce-amount {
+    font-weight: 600;
+    font-size: 14.5px;
+}
+
+.block span.full-amount {
+    font-size: 10px;
+    text-align: left;
+    color: #C8C8C8;
+}
+
+.total-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.delivery-text {
+    color:#FF6B82;
+    font-size:14px;
+    font-weight:600;
+}
+
+.total-amount .amount-flex{
+    display:flex;
+    gap:4px;
+    font-weight:600;
+    font-size: 14px;
+}
+
+.button-with-text {
+    background-color:#FF6B82;
+    color:white;
+    padding:12px;
+    border-radius:5px;
+    font-size:12px;
+}
+
+.button-with-text a.button-text{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    gap:10px;
+}
+
+.button-with-text a.button-text span:nth-child(1) {
+    font-size:20px;
+    line-height:12px;
+}
+
+.button-tag {
+    font-size: 12px;
+    text-align: right;
+    padding-top:5px;
+    color: #C8C8C8;
+}
+
+.expand-text {
+    padding-top: 10px;
+    padding-left: 20px;
+}
+.expand-text table td{
+    text-align:left;
+    font-size:10px;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+.expand-text table select{
+    border-radius:5px;
+    border-color:#D9D9D9;
+    width:65px;
+    height:25px;
+}
+
+.second-block{
+    padding-top:30px;
+    position:relative;
+}
+
+
+.popular-bar{
+    width:max-content;
+    background-color:#FF6B82;
+    color:white;
+    font-size:12px;
+    font-weight:700;
+    padding:5px;
+    position:absolute;
+    top:-10px;
+    right:20px;
+}
+
+.popular-bar:before {
+    content:"";
+    left: -4px;
+    top: 0px;
+    width: 8px;
+    height: 8px;
+    background: #FF6f82;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    display: block;
+    position: absolute;
+}
+
+.popular-bar:after {
+    content:"";
+    right: -4px;
+    top: 0px;
+    width: 8px;
+    height: 8px;
+    background: #FF6f82;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    display: block;
+    position: absolute;
+}
+
+.expand-text {
+    display: none;
+}
+.active-block .expand-text {
+    display: block;
+}
+
+.popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            z-index: 1000;
+        }
+        .popup-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+        .popup button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
