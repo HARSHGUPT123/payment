@@ -141,6 +141,7 @@ body:has(.main-div) {
     padding:12px;
     border-radius:5px;
     font-size:12px;
+cursor:pointer;
 }
 
 .button-with-text a.button-text{
